@@ -17,6 +17,8 @@ The Casa do Leo website is built using the Django framework, incorporating HTML,
 
 ## Screenshots
 
+![Homepage](home.jpeg)
+*Description: This is the homepage of the Casa do Leo website.*
 
 ## Features
 
