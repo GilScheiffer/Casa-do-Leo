@@ -1,0 +1,23 @@
+{% extends 'galeria/base.html' %}
+{% load static %}
+{% block content %}
+    <div class="pagina-inicial">
+        {% include 'galeria/partials/_header.html' %}
+        <main class="principal">
+            {% include 'galeria/partials/_menu-lateral.html' %}
+            <section class="conteudo">
+                <section class="imagem">
+                    <div class="imagem__conteudo">
+                        <img class="imagem__imagem" src="{% static '/assets/imagens/galeria/rocinha03.jpg' %}">
+                        <div class="imagem__info">
+                            <div class="imagem__texto">
+                                <p class="imagem__titulo">Comunidade da Rocinha</p>
+                                <p class="imagem__texto">A Rocinha é a maior favela do Rio de Janeiro, Brasil, localizada na Zona Sul da cidade. É uma comunidade vibrante e diversa, situada nas encostas das montanhas. Apesar dos desafios socioeconômicos, a Rocinha é um lugar de resiliência, cultura rica e empreendedorismo local. A comunidade luta por melhores condições de vida e oportunidades para seus moradores.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </section>
+        </main>
+    </div>
+{% endblock %}

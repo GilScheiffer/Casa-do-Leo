@@ -1,0 +1,89 @@
+{% extends 'galeria/base.html' %}
+{% load static %}
+{% block content %}
+    <div class="pagina-inicial">
+        {% include 'galeria/partials/_header.html' %}
+        <main class="principal">
+            {% include 'galeria/partials/_menu-lateral.html' %}
+            <section class="conteudo">
+                <section class="banner">
+                    <img class="banner__imagem" src="{% static '/assets/imagens/2.png' %}" alt="banner">
+                    <h1 class="banner__titulo">Por um mundo mais justo, onde todas as crianças têm a chance de sonhar!</h1>
+                </section>
+                <section class="tags">
+                    <p class="tags__titulo">Busque por tags:</p>
+                    <ul class="tags__lista">
+                        <li class="tags__tag">Zona Norte</li>
+                        <li class="tags__tag">Zona Sul</li>
+                        <li class="tags__tag">Zona Leste</li>
+                        <li class="tags__tag">Zona Oeste</li>
+                    </ul>
+                </section>
+                <section class="galeria">
+                    <div class="cards">
+                        <h2 class="cards__titulo">Navegue pelas comunidades</h2>
+                        <ul class="cards__lista">
+                            <li class="card">
+                                <a href="{% url 'imagem' %}">
+                                    <img class="card__imagem" src="{% static '/assets/imagens/galeria/rocinha03.jpg' %}" alt="foto">
+                                </a>
+                                <div class="card__info">
+                                    <p class="card__titulo">Nome da foto</p>
+                                    <div class="card__texto">
+                                        <p class="card__descricao">Descricao</p>
+                                        <span>
+                                            <img src="{% static '/assets/ícones/1x/favorite_outline.png' %}" alt="ícone de coração">
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="card">
+                                <a href="{% url 'imagem' %}">
+                                    <img class="card__imagem" src="{% static '/assets/imagens/galeria/rocinha03.jpg' %}" alt="foto">
+                                </a>
+                                <div class="card__info">
+                                    <p class="card__titulo">Nome da foto</p>
+                                    <div class="card__texto">
+                                        <p class="card__descricao">Descricao</p>
+                                        <span>
+                                            <img src="{% static '/assets/ícones/1x/favorite_outline.png' %}" alt="ícone de coração">
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="card">
+                                <a href="{% url 'imagem' %}">
+                                    <img class="card__imagem" src="{% static '/assets/imagens/galeria/rocinha03.jpg' %}" alt="foto">
+                                </a>
+                                <div class="card__info">
+                                    <p class="card__titulo">Nome da foto</p>
+                                    <div class="card__texto">
+                                        <p class="card__descricao">Descricao</p>
+                                        <span>
+                                            <img src="{% static '/assets/ícones/1x/favorite_outline.png' %}" alt="ícone de coração">
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="card">
+                                <a href="{% url 'imagem' %}">
+                                    <img class="card__imagem" src="{% static '/assets/imagens/galeria/rocinha03.jpg' %}" alt="foto">
+                                </a>
+                                <div class="card__info">
+                                    <p class="card__titulo">Nome da foto</p>
+                                    <div class="card__texto">
+                                        <p class="card__descricao">Descricao</p>
+                                        <span>
+                                            <img src="{% static '/assets/ícones/1x/favorite_outline.png' %}" alt="ícone de coração">
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </section>
+        </main>
+    </div>
+
+{% endblock %}
